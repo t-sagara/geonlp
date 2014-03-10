@@ -1,0 +1,6 @@
+[submodule "geonlp-software"]
+	path = geonlp-software
+	url = git@github.com:t-sagara/geonlp-software.git
+[submodule "geonlp-data"]
+	path = geonlp-data
+	url = git@github.com:t-sagara/geonlp-data.git
