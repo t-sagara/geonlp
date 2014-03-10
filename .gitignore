@@ -1,6 +1,5 @@
 *.log
 *~
-*.zip
 *.tgz
 *.o
 *.po
@@ -8,14 +7,13 @@
 *.lo
 Makefile
 Makefile.in
-software/.libs/
-software/.deps/
+.libs/
+.deps/
 software/autom4te.cache/
 software/aclocal.m4
 software/configure
 software/configure.in
 software/dict/geo_name_fullname.drt
-software/dict/geodic-init.dump.gz
 software/dict/geodic.sq3
 software/dict/mecabusr.dic
 software/dict/wordlist.sq3
