@@ -4,3 +4,6 @@
 [submodule "geonlp-data"]
 	path = geonlp-data
 	url = git@github.com:t-sagara/geonlp-data.git
+[submodule "geonlp-document"]
+	path = geonlp-document
+	url = git@github.com:t-sagara/geonlp-document.git
