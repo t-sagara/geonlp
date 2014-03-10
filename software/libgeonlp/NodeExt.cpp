@@ -74,12 +74,10 @@ namespace geonlp
   void NodeExt::evaluatePossibility(const PHBSDefs& phbsdef, bool nextIsHead)
   {
     // MeCab のバグ回避：一部の記号が「名詞，サ変」になるので記号に置き換える
-    if (std::string("－～♪\\").find_first_of(this->surface, 0) != std::string::npos) {
-      /*
-      if (this->surface.substr(0, 3) == "－"
+    if (this->surface.substr(0, 3) == "－"
+        || this->surface.substr(0, 3) == "～"
 	|| this->surface.substr(0, 3) == "♪"
 	|| this->surface.substr(0, 1) == "\\") {
-      */
       this->feature = "記号,一般,*,*,*,*,*";
       this->set_partOfSpeech("記号");
       this->set_subclassification1("一般");
